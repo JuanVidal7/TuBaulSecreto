@@ -1,3 +1,4 @@
+
 @mixin align-center{
     text-align: center;
 }
@@ -87,6 +88,7 @@ a {
     margin-top: 50px;
     text-align: center;
     padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .main-footer__logo {
@@ -100,6 +102,10 @@ th, td{
 
 .table td{
     vertical-align: middle;
+}
+
+section{
+    min-height: calc(100vh - 240px - 400px);
 }
 
  .main-article {
@@ -312,4 +318,48 @@ label, legend, input, textarea, select {
 .main-products__producto9{
     grid-area: Producto9;
     border: 1px solid rgb(196, 117, 0);
+}
+
+/* Boton para ir al Top */
+
+#button-up{
+    width: 30px;
+    height: 30px;
+    background: #c47500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 15px;
+    position: fixed;
+    bottom: 75px;
+    right: 20px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all 300ms ease;
+    transform: scale(0);
+    opacity: 0.8;
+}
+
+@media (min-width: 900px){
+    #button-up{
+        width: 40px;
+        height: 40px;
+        background: #c47500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        border-radius: 50%;
+        font-size: 20px;
+        position: fixed;
+        bottom: 75px;
+        right: 20px;
+        cursor: pointer;
+        border: 4px solid transparent;
+        transition: all 300ms ease;
+        transform: scale(0);
+        opacity: 1;
+    }
 }
