@@ -31,12 +31,15 @@ td ul li {
 a {
   text-decoration: none; }
 
-.main-section__title, h2, .main-section__title-contact_us {
+.main-section__title, h2, .main-section__title-contact_us, .main-section__title-products {
   color: #c47500;
   font-family: 'Poppins';
   margin-left: 20px; }
 
 .main-section__title-contact_us {
+  text-align: center; }
+
+.main-section__title-products {
   text-align: center; }
 
 .main-article__parrafo-gral {

@@ -57,6 +57,11 @@ a {
     @include align-center();
 }
 
+.main-section__title-products {
+    @extend .main-section__title;
+    @include align-center()
+}
+
 .main-article__parrafo-gral{
     @extend .main-article__parrafo;
         margin-left: 20px;
@@ -363,3 +368,5 @@ label, legend, input, textarea, select {
         opacity: 1;
     }
 }
+
+$card-height: 100%;
