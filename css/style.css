@@ -157,6 +157,13 @@ label, legend, input, textarea, select {
   font-weight: bold;
   background-color: #ffc062; }
 
+@media (max-width: 991px) {
+  .main-form__input:focus {
+    width: 250px;
+    outline: 0px;
+    font-weight: bold;
+    background-color: #ffc062; } }
+
 .main-form__select:focus {
   outline: 0px;
   font-weight: bold;
