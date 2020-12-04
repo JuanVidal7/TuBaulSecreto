@@ -114,6 +114,18 @@ th, td{
     vertical-align: middle;
 }
 
+@media (max-width: 991px){
+    .table{
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px){
+    .table__img{
+        width: 70%;
+    }
+}
+
 section{
     min-height: calc(100vh - 230px - 400px);
 }
@@ -406,4 +418,42 @@ $card-height: 100%;
     50% {transform: rotate(-90deg);}
     75% {transform: rotate(-10deg);}
     100% {transform: rotate(-45deg);}
+}
+
+/* Sección LLena Tu Baúl */
+
+.card__baul{
+    display: flex; 
+    justify-content: space-around;
+}
+
+@media (max-width: 991px){
+    .card__baul{
+        display: inline;
+    }
+
+    .card-img{
+        display: flex;
+        width: 50%;
+        margin-left: 25%;
+        
+    }
+}
+
+.btn{
+    background-color: #c47500;
+    color: #fff;
+    font-family: 'Poppins';
+}
+
+.btn:hover{
+    background-color: #293133;
+}
+
+.card-title{
+    font-family: 'Poppins';
+}
+
+.card-text{
+    font-family: 'Poppins';
 }
