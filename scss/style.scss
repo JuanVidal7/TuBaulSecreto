@@ -65,7 +65,7 @@ a {
 .main-article__parrafo-gral{
     @extend .main-article__parrafo;
         margin-left: 20px;
-        margin-right: 20px;  
+        margin-right: 20px;
 }
 
 .main-section__parrafo-contact_us{
@@ -97,6 +97,7 @@ a {
 }
 
 .main-footer__logo {
+    margin-bottom: 10px;
     width: 150px;
 }
 
@@ -105,12 +106,16 @@ th, td{
     color: #293133;
 }
 
+.table{
+    width: 80%;
+}
+
 .table td{
     vertical-align: middle;
 }
 
 section{
-    min-height: calc(100vh - 240px - 400px);
+    min-height: calc(100vh - 230px - 400px);
 }
 
  .main-article {

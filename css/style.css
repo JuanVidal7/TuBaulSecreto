@@ -69,17 +69,21 @@ a {
   padding-bottom: 40px; }
 
 .main-footer__logo {
+  margin-bottom: 10px;
   width: 150px; }
 
 th, td {
   font-family: 'Poppins';
   color: #293133; }
 
+.table {
+  width: 80%; }
+
 .table td {
   vertical-align: middle; }
 
 section {
-  min-height: calc(100vh - 240px - 400px); }
+  min-height: calc(100vh - 230px - 400px); }
 
 .main-article {
   text-align: center; }
