@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@media (max-width: 991px) {
+  body {
+    margin: 0; } }
+
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
   color: #c47500; }
 
@@ -62,7 +66,6 @@ a {
   background-color: #293133;
   color: #ffffff;
   font-family: 'Poppins';
-  width: 100%;
   margin-top: 50px;
   text-align: center;
   padding-top: 15px;
@@ -70,7 +73,7 @@ a {
 
 .main-footer__logo {
   margin-bottom: 10px;
-  width: 150px; }
+  width: 200px; }
 
 th, td {
   font-family: 'Poppins';
@@ -102,11 +105,20 @@ section {
 
 .main-header {
   text-align: right;
-  margin-top: 30px;
-  margin-right: 50px; }
+  margin-top: 20px;
+  margin-right: 250px; }
 
 .main-header__social {
-  width: 30px; }
+  width: 40px;
+  margin-right: 20px; }
+
+@media (max-width: 991px) {
+  .main-header {
+    margin-top: 20px;
+    margin-right: 33%; }
+  .main-header__social {
+    width: 40px;
+    margin-right: 20px; } }
 
 .main-footer__social {
   width: 30px; }
@@ -223,15 +235,6 @@ label, legend, input, textarea, select {
   justify-self: end; }
 
 /* Productos */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "Producto1 Producto2 Producto3" "Producto4 Producto5 Producto6" "Producto7 Producto8 Producto9";
-  padding-left: 30px;
-  padding-right: 30px;
-  height: 70vh; }
-
 .main-products__producto1 {
   grid-area: Producto1;
   border: 1px solid #c47500; }
