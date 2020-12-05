@@ -65,7 +65,7 @@ a {
 
 .main-section__title-products {
     @extend .main-section__title;
-    @include align-center()
+    @include align-center();
     margin-left: 0px;
 }
 
