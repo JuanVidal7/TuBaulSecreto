@@ -60,11 +60,13 @@ a {
 .main-section__title-contact_us{
     @extend .main-section__title;
     @include align-center();
+    margin-left: 0px;
 }
 
 .main-section__title-products {
     @extend .main-section__title;
     @include align-center()
+    margin-left: 0px;
 }
 
 .main-article__parrafo-gral{
@@ -141,6 +143,7 @@ section{
  .main-article__parrafo{
     color: #293133;
     font-family: 'Poppins';
+    margin: 20px 20px 20px 20px
  }
 
 .main-header{
