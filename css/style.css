@@ -362,5 +362,9 @@ label, legend, input, textarea, select {
 .card-title {
   font-family: 'Poppins'; }
 
-.card-text {
-  font-family: 'Poppins'; }
+.card-text, .card-text-b {
+  font-family: 'Poppins';
+  text-align: justify; }
+
+.card-text-b {
+  text-align: left; }

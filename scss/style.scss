@@ -463,4 +463,10 @@ $card-height: 100%;
 
 .card-text{
     font-family: 'Poppins';
+    text-align: justify;
+}
+
+.card-text-b {
+    @extend .card-text;
+    text-align: left;
 }
