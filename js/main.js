@@ -72,6 +72,11 @@ function productos(producto) {
     }
 }
 
+class Productos{
+    constructor(nombreProducto){
+        this.nombre = nombreProducto;
+    }
+}
 
 function baulPequeño() {
     alert("Has seleccionado el Baúl Pequeño");
@@ -79,7 +84,7 @@ function baulPequeño() {
     let validar = validacion(pregunta);
     let continuar = "si";
     let canasta = [];
-
+    
     if (validar === "si") {
         while (continuar === "si") {
             let producto = prompt("¿Qué producto deseas agregar?");
@@ -89,7 +94,8 @@ function baulPequeño() {
             } else if (prd === "mediano") {
                 alert("Este producto solo se puede agregar al Baúl Mediano o Grande");
             } else {
-                alert("Producto agregado!");
+                let misProductos = new Productos(producto);
+                alert("El producto agregado es: " + JSON.stringify(misProductos.nombre).toUpperCase());
                 canasta.push(" " + producto.toUpperCase());
             }
 
@@ -118,7 +124,8 @@ function baulMediano() {
             if (prd === "grande") {
                 alert("Este producto solo se puede agregar al Baúl Grande");
             } else if ((prd === "mediano") || (prd === "pequeño")) {
-                alert("Producto agregado!");
+                let misProductos = new Productos(producto);
+                alert("El producto agregado es: " + JSON.stringify(misProductos.nombre).toUpperCase());
                 canasta.push(" " + producto.toUpperCase());
             }
 
@@ -145,7 +152,8 @@ function baulGrande() {
             let producto = prompt("¿Qué producto deseas agregar?");
             let prd = productos(producto);
             if ((prd === "grande") || (prd === "mediano" || (prd === "pequeño"))) {
-                alert("Producto agregado!");
+                let misProductos = new Productos(producto);
+                alert("El producto agregado es: " + JSON.stringify(misProductos.nombre).toUpperCase());
                 canasta.push(" " + producto.toUpperCase());
             }
             
