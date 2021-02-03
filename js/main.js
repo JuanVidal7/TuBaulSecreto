@@ -26,12 +26,6 @@ window.onscroll = function () {
 }
 
 
-
-
-//PROYECTO INTEGRADOR CURSO JAVASCRIPT
-
-//DESAFÍO 4
-
 function validacion(pregunta) {
     if (pregunta === "si") {
         return "si";
@@ -74,104 +68,6 @@ function productos(producto) {
             break;
     }
 }
-
-
-// function baulPequeño() {
-//     alert("Has seleccionado el Baúl Pequeño");
-//     let pregunta = prompt("¿Este es el Baúl que quieres?");
-//     let validar = validacion(pregunta);
-//     let continuar = "si";
-//     let canasta = [];
-
-//     if (validar === "si") {
-//         while (continuar === "si") {
-//             let producto = prompt("¿Qué producto deseas agregar?");
-//             let prd = productos(producto.toLowerCase().trim());
-//             if (prd === "grande") {
-//                 alert("Este producto solo se puede agregar al Baúl Grande");
-//             } else if (prd === "mediano") {
-//                 alert("Este producto solo se puede agregar al Baúl Mediano o Grande");
-//             } else if (prd === "no") {
-//                 alert("Este producto no existe!");
-//             } else {
-//                 let misProductos = new Productos(producto);
-//                 alert("El producto agregado es: " + JSON.stringify(misProductos.nombre).toUpperCase());
-//                 canasta.push(" " + producto.toUpperCase());
-//             }
-
-//             continuar = prompt("¿Deseas agregar otro producto?");
-
-//             if (continuar === "no") {
-//                 alert("!Qué bien!... Tienes un Baúl especial lleno con " + canasta);
-//             }
-//         }
-//     } else {
-//         alert("Entendemos que quieres elegir otro Baúl!");
-//     }
-// }
-
-// function baulMediano() {
-//     alert("Has seleccionado el Baúl Mediano");
-//     let pregunta = prompt("¿Este es el Baúl que quieres?");
-//     let validar = validacion(pregunta);
-//     let continuar = "si";
-//     let canasta = [];
-
-//     if (validar === "si") {
-//         while (continuar === "si") {
-//             let producto = prompt("¿Qué producto deseas agregar?");
-//             let prd = productos(producto.toLowerCase().trim());
-//             if (prd === "grande") {
-//                 alert("Este producto solo se puede agregar al Baúl Grande");
-//             } else if (prd === "no") {
-//                 alert("Este producto no existe!");
-//             } else if ((prd === "mediano") || (prd === "pequeño")) {
-//                 let misProductos = new Productos(producto);
-//                 alert("El producto agregado es: " + JSON.stringify(misProductos.nombre).toUpperCase());
-//                 canasta.push(" " + producto.toUpperCase());
-//             }
-
-//             continuar = prompt("¿Quieres agregar otro producto?");
-
-//             if (continuar === "no") {
-//                 alert("!Qué bien!... Tienes un Baúl especial lleno con " + canasta);
-//             }
-//         }
-//     } else {
-//         alert("Entendemos que quieres elegir otro Baúl!");
-//     }
-// }
-
-// function baulGrande() {
-//     alert("Has seleccionado el Baúl Grande");
-//     let pregunta = prompt("¿Este es el Baúl que quieres?");
-//     let validar = validacion(pregunta);
-//     let continuar = "si";
-//     let canasta = [];
-
-//     if (validar === "si") {
-//         while (continuar === "si") {
-//             let producto = prompt("¿Qué producto deseas agregar?");
-//             let prd = productos(producto.toLowerCase().trim());
-//             if ((prd === "grande") || (prd === "mediano" || (prd === "pequeño"))) {
-//                 let misProductos = new Productos(producto);
-//                 alert("El producto agregado es: " + JSON.stringify(misProductos.nombre).toUpperCase());
-//                 canasta.push(" " + producto.toUpperCase());
-//             } else if (prd === "no") {
-//                 alert("Este producto no existe!");
-//             }
-
-//             continuar = prompt("¿Quieres agregar otro producto?");
-
-//             if (continuar === "no") {
-//                 alert("!Qué bien!... Tienes un Baúl especial lleno con " + canasta);
-//             }
-//         }
-
-//     } else {
-//         alert("Entendemos que quieres elegir otro Baúl!");
-//     }
-// }
 
 $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').trigger('focus')
