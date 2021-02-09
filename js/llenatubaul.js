@@ -24,10 +24,10 @@ baseDeDatos.push(hersheyBlanca);
 baseDeDatos.push(hersheyNegra);
 baseDeDatos.push(chocolatesMYM);
 
-function agregarAlCarrito() {
+function agregarAlCarrito(tipo) {
     alert("Se ha agregado el Baúl a tu Carrito. Ahora selecciona los productos!");
 
-    carrito.push("Baúl Pequeño");
+    carrito.push(tipo);
     localStorage.setItem("carrito", JSON.stringify(carrito));
 
     let mostrarProducto = ``;
@@ -40,7 +40,7 @@ function agregarAlCarrito() {
                                 <h5 class="card-title">${baseDeDatos[i].nombre}</h5>
                                 <p class="card-text">${baseDeDatos[i].descripcion}</p>
                                 <button type="button" class="btn btn-secondary btn-lg btn-block"
-                                onclick=${"agregarAlBaul()"}>Agregar al Baúl</button>
+                                onclick=${"agregarAlBaul(baseDeDatos[0].nombre)"}>Agregar al Baúl</button>
                             </div>
                         </div>
                     </div>`
@@ -54,15 +54,18 @@ function verCarrito() {
         let valoresDelCarrito = JSON.parse(localStorage.getItem('carrito'));
         carrito = valoresDelCarrito;
 
+        let mostrarCarrito = ``;
         for (i = 0; i < carrito.length; i++) {
-            document.getElementById("carritoCompras").innerHTML = `
-            <h5>${carrito}
+            mostrarCarrito += `
+            <h5>${carrito[i]}
             <a href="" onclick=${"borrarDelBaul()"}><img
                 style="width:25px; float:right;" src="img/eliminar.png" alt="Carrito"></a>
             </h5>
             <hr>
             `
         }
+
+        document.getElementById("carritoCompras").innerHTML = mostrarCarrito;
 
     } else if (localStorage.getItem('carrito') === null) {
         document.getElementById("carritoCompras").innerHTML = `
@@ -71,8 +74,18 @@ function verCarrito() {
     }
 }
 
-function agregarAlBaul() {
-    carrito.push("Chocolatinaa Hershey's Blanca");
+function agregarAlBaul(nombre) {
+    carrito.push(nombre);
     localStorage.setItem("carrito", JSON.stringify(carrito));
 }
 
+function borrarDelBaul() {
+    const nuevoCarrito = [];
+    for (let i = 0; i < carrito.length; i++) {
+        if(i != 1){
+            nuevoCarrito.push(carrito[i]);
+        }
+    }
+    localStorage.setItem("carrito", JSON.stringify(nuevoCarrito));
+    carrito = nuevoCarrito;
+  }
