@@ -91,3 +91,11 @@ function borrarDelBaul(producto) {
     localStorage.setItem("carrito", JSON.stringify(nuevoCarrito));
     carrito = nuevoCarrito;
 }
+
+$("#pruebaAjax").ready(function(){
+    $.get('js/datos.json', function(datos){
+        let info = JSON.stringify(datos.texto)
+        info = info.replace(/['"]+/g, '');
+        $("#seccion").html(info);
+    })
+});
