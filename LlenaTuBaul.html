@@ -112,12 +112,12 @@
                                 candado de combinación. <br> * La contraseña te la solicitaremos al momento de pagar.
                             </p>
                             <button type="button" class="btn btn-secondary btn-lg btn-block"
-                                onclick="agregarAlCarrito('Baúl Pequeño');">Elegir este Baúl</button>
+                                onclick="agregarAlCarrito('Baúl Pequeño', 15000);">Elegir este Baúl</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card mb-3 h-100 shadow p-3 mb-5 bg-white rounded" style="max-width: 540px;">
+            <!-- <div class="card mb-3 h-100 shadow p-3 mb-5 bg-white rounded" style="max-width: 540px;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img src="img/baul128.png" class="card-img" alt="Baúl Mediano">
@@ -152,7 +152,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
         </div>
@@ -176,7 +176,10 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body" id="carritoCompras">
+                <div class="modal-body" id="carritoCompras"></div>
+                <div class="modal-body">
+                    <hr>
+                    <h5>Total: <span id="total">0</span></span>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
