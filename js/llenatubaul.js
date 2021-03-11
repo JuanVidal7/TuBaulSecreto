@@ -81,7 +81,7 @@ function verCarrito() {
 }
 
 function agregarAlBaul(nombre,valor) {
-    var id = Math.round(Math.random()*12);
+    var id = Math.round(Math.random()*500);
     carrito.push({id,nombre,valor});
     localStorage.setItem("carrito", JSON.stringify(carrito));
 }
